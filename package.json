@@ -1,0 +1,40 @@
+{
+  "name": "phone-sticker-sponsorship",
+  "version": "0.1.0",
+  "private": true,
+  "scripts": {
+    "dev": "next dev",
+    "build": "next build",
+    "build:worker": "npm run build && wrangler deploy --dry-run --outdir=dist-worker",
+    "configure": "node scripts/configure-template.mjs",
+    "launch": "bash scripts/launch.sh",
+    "db:migrate": "node scripts/d1-migrate.mjs",
+    "db:clear-pending": "node scripts/d1-clear-pending.mjs",
+    "cf:bootstrap": "node scripts/cloudflare-bootstrap.mjs",
+    "deploy": "node scripts/deploy.mjs",
+    "preview": "npm run build && wrangler dev",
+    "start": "next start",
+    "lint": "eslint"
+  },
+  "dependencies": {
+    "@dodopayments/core": "^0.3.15",
+    "dodopayments": "^2.48.0",
+    "framer-motion": "^13.1.1",
+    "next": "16.3.3",
+    "posthog-js": "^1.421.0",
+    "react": "19.2.8",
+    "react-dom": "19.2.8"
+  },
+  "devDependencies": {
+    "@cloudflare/workers-types": "^5.20260827.1",
+    "@tailwindcss/postcss": "^4",
+    "@types/node": "^20",
+    "@types/react": "^19",
+    "@types/react-dom": "^19",
+    "eslint": "^9",
+    "eslint-config-next": "16.3.3",
+    "tailwindcss": "^4",
+    "typescript": "^5",
+    "wrangler": "^4.24.0"
+  }
+}

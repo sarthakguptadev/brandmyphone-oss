@@ -1,0 +1,86 @@
+@import "tailwindcss";
+
+:root {
+  --background: #ffffff;
+  --surface: #f5f5f7;
+  --ink: #1d1d1f;
+  --ink-2: #56565c;
+  --hairline: #d2d2d7;
+  --blue: #0071e3;
+  --blue-hover: #0077ed;
+  --green: #1a7f37;
+  --apple-green: #16a34a;
+  --lid-1: #ececed;
+  --lid-2: #dcdcdf;
+  --lid-3: #c8c8cd;
+  --font-system: -apple-system, BlinkMacSystemFont, "SF Pro Display",
+    "SF Pro Text", var(--font-inter), "Segoe UI", "Helvetica Neue", Helvetica,
+    Arial, sans-serif;
+}
+
+@theme inline {
+  --color-background: var(--background);
+  --color-surface: var(--surface);
+  --color-ink: var(--ink);
+  --color-ink-2: var(--ink-2);
+  --color-hairline: var(--hairline);
+  --color-blue: var(--blue);
+  --color-blue-hover: var(--blue-hover);
+  --color-green: var(--green);
+  --color-apple-green: var(--apple-green);
+  --color-lid-1: var(--lid-1);
+  --font-sans: var(--font-system);
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  background: var(--background);
+  color: var(--ink);
+  font-family: -apple-system, BlinkMacSystemFont, "SF Pro Display",
+    "SF Pro Text", var(--font-inter), "Segoe UI", "Helvetica Neue", Helvetica,
+    Arial, sans-serif;
+  -webkit-font-smoothing: antialiased;
+  text-rendering: optimizeLegibility;
+  overflow-x: clip;
+}
+
+h1,
+h2,
+h3 {
+  text-wrap: balance;
+}
+
+p {
+  text-wrap: pretty;
+}
+
+::selection {
+  background: color-mix(in srgb, var(--blue) 18%, transparent);
+}
+
+@media (prefers-reduced-motion: reduce) {
+  html {
+    scroll-behavior: auto;
+  }
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    transition-duration: 0.01ms !important;
+  }
+}
+
+@keyframes ping-soft {
+  75%,
+  100% {
+    transform: scale(2);
+    opacity: 0;
+  }
+}
+
+.animate-ping-soft {
+  animation: ping-soft 1s cubic-bezier(0, 0, 0.2, 1) infinite;
+}

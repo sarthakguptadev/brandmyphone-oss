@@ -1,0 +1,14 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "Phone Sticker Sponsorship boilerplate configuration",
+  "type": "object",
+  "required": ["projectName", "workerName", "databaseName", "siteUrl", "customDomain"],
+  "properties": {
+    "projectName": { "type": "string", "pattern": "^[a-z0-9][a-z0-9-]{0,62}$" },
+    "workerName": { "type": "string", "pattern": "^[a-z0-9][a-z0-9-]{0,62}$" },
+    "databaseName": { "type": "string", "pattern": "^[a-z0-9][a-z0-9-]{0,62}$" },
+    "siteUrl": { "type": "string", "format": "uri" },
+    "customDomain": { "type": ["string", "null"] }
+  },
+  "additionalProperties": false
+}

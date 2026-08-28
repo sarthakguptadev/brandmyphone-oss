@@ -1,0 +1,5 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 80 40" fill="none">
+  <rect width="80" height="40" rx="8" fill="#1A1A2E"/>
+  <circle cx="22" cy="20" r="7" fill="#FF4D6D"/>
+  <text x="48" y="25" text-anchor="middle" font-family="system-ui,sans-serif" font-size="13" font-weight="700" fill="#fff">Pulse</text>
+</svg>
