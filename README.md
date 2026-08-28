@@ -1,9 +1,11 @@
-# Phone Sticker Sponsorship
+# BrandMyPhone — Phone Sticker Ads
 
-By [Sarthak Gupta](https://x.com/sarthakguptadev) · the boilerplate behind
-[BrandMyPhone.tech](https://brandmyphone.tech)
+The open-source boilerplate behind
+[BrandMyPhone.tech](https://brandmyphone.tech), by
+[Sarthak Gupta](https://x.com/sarthakguptadev).
 
-[![Buy a spot](https://img.shields.io/badge/Buy%20a%20spot%20on%20the%20original-brandmyphone.tech-0a84ff?style=for-the-badge)](https://brandmyphone.tech)
+[![Buy a spot on BrandMyPhone.tech](https://img.shields.io/badge/Buy%20a%20spot%20on%20BrandMyPhone.tech-0a84ff?style=for-the-badge&logo=apple&logoColor=white)](https://brandmyphone.tech)
+[![Follow @sarthakguptadev on X](https://img.shields.io/badge/Follow%20%40sarthakguptadev-000000?style=for-the-badge&logo=x&logoColor=white)](https://x.com/intent/follow?screen_name=sarthakguptadev)
 
 A self-hostable storefront for selling sponsor sticker spots on the back of
 a phone. Visitors pick one of 14 fixed-price spots, pay by card, and their
